@@ -237,6 +237,153 @@ files:
         }
     );
   learner_created: false
-feedback_link: https://hyperskill.org/projects/143/stages/773/implement#comment
-status: Unchecked
-record: -1
+- name: src/assets/css/style.css
+  visible: true
+  text: |-
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+    }
+
+    .space {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 80%;
+        height: 100%;
+        background-image: url("../img/space.png");
+    }
+
+    .planet-area {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 50%;
+        height: 70%;
+    }
+
+    .planet {
+        display: block;
+        width: 350px;
+        height: min-content;
+        z-index: 1;
+    }
+
+    .rocket {
+        position: absolute;
+        left: 150px;
+        bottom: 150px;
+        width: 200px;
+        height: 200px;
+        transform: rotate(37deg);
+        z-index: 0;
+    }
+
+    .control-panel {
+        position: relative;
+        top: 40%;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin: 3rem 2rem 0 auto;
+        background-color: black;
+    }
+
+    .control-panel_inner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+
+    .input-password {
+        display: inline-block;
+        align-self: flex-start;
+        margin-left: .2rem;
+        outline: none;
+        border: solid 2px yellow;
+        border-radius: 5px;
+        font-size: .75rem;
+    }
+
+    .input-ok {
+        position: absolute;
+        top: .5rem;
+        right: 2.5rem;
+        background-color: yellow;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    .check-buttons, .levers {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .check-buttons {
+        margin-top: .5rem;
+    }
+
+    .levers {
+        margin: 15px 0;
+    }
+
+    .check-buttons > .input-check {
+        margin: 0 15px;
+    }
+
+    .levers > .input-lever {
+        appearance: none;
+        -webkit-appearance: slider-vertical; /** WebKit **/
+        writing-mode: bt-lr; /** IE **/
+        margin: 3px 15px 3px 14px;
+        height: 100px;
+        width: 14px;
+        border-radius: 5px;
+        background: gray;
+        outline: none;
+    }
+
+    ::-moz-range-track {
+        background: gray;
+        border: 0;
+    }
+
+    .input-launch {
+        padding: .5rem;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        border-radius: 50%;
+    }
+  learner_created: true
+feedback_link: https://hyperskill.org/learn/step/11735#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 05 Apr 2022 21:01:52 UTC
+record: 3

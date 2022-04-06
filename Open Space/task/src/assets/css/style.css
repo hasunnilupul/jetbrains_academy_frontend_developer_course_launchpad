@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+.space {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 80%;
+    height: 100%;
+    background-image: url("../img/space.png");
+}
+
+.planet-area {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 50%;
+    height: 70%;
+}
+
+.planet {
+    display: block;
+    width: 350px;
+    height: min-content;
+    z-index: 1;
+}
+
+.rocket {
+    position: absolute;
+    left: 150px;
+    bottom: 150px;
+    width: 200px;
+    height: 200px;
+    transform: rotate(37deg);
+    z-index: 0;
+}
+
+.control-panel {
+    position: relative;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 3rem 2rem 0 auto;
+    /** background design **/
+    background-color:#269;
+    background-image: linear-gradient(white 2px, transparent 2px),
+    linear-gradient(90deg, white 2px, transparent 2px),
+    linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+.control-panel__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.input-password {
+    display: inline-block;
+    align-self: flex-start;
+    margin-left: .2rem;
+    outline: none;
+    border: solid 2px yellow;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    font-size: .75rem;
+}
+
+.input-ok {
+    position: absolute;
+    top: .5rem;
+    right: 2.5rem;
+    background-color: yellow;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.check-buttons, .levers {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.check-buttons {
+    margin-top: .5rem;
+}
+
+.levers {
+    margin: 15px 0;
+}
+
+.check-buttons > .input-check {
+    margin: 0 15px;
+}
+
+.levers > .input-lever {
+    appearance: none;
+    -webkit-appearance: slider-vertical; /** WebKit **/
+    writing-mode: bt-lr; /** IE **/
+    margin: 3px 15px 3px 14px;
+    height: 100px;
+    width: 14px;
+    border-radius: 5px;
+    background: gray;
+    outline: none;
+}
+
+::-moz-range-track {
+    background: gray;
+    border: 0;
+}
+
+.input-launch {
+    padding: .5rem;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}

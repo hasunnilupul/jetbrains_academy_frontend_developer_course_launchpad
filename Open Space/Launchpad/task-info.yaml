@@ -108,6 +108,12 @@ files:
     </body>
     </html>
   learner_created: false
-feedback_link: https://hyperskill.org/projects/143/stages/771/implement#comment
-status: Unchecked
-record: -1
+- name: src/assets/css/style.css
+  visible: true
+  learner_created: true
+feedback_link: https://hyperskill.org/learn/step/11733#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 03 Apr 2022 18:08:03 UTC
+record: 1

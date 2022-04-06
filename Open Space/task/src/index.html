@@ -2,9 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="assets/css/style.css" rel="stylesheet">
     <title>Open Space</title>
+    <script type="application/javascript" src="assets/js/scripts.js" async></script>
 </head>
 <body>
-    Hello, World!
+<div class="space">
+    <div class="planet-area">
+        <img src="assets/img/mars.png" alt="mars" class="planet">
+        <img src="assets/img/rocket.png" alt="rocket" class="rocket">
+    </div>
+    <div class="control-panel">
+        <div class="control-panel__inner">
+            <input type="password" id="password" class="input-password" placeholder="Enter password to unlock">
+            <input type="button" value="OK" class="input-ok">
+            <div class="check-buttons">
+                <input type="checkbox" id="select-1" class="input-check" onchange="setLeverAndCheckboxesStatus()">
+                <input type="checkbox" id="select-2" class="input-check" onchange="setLeverAndCheckboxesStatus()">
+                <input type="checkbox" id="select-3" class="input-check" onchange="setLeverAndCheckboxesStatus()">
+                <input type="checkbox" id="select-4" class="input-check" onchange="setLeverAndCheckboxesStatus()">
+                <input type="checkbox" id="select-5" class="input-check" onchange="setLeverAndCheckboxesStatus()">
+                <input type="checkbox" id="select-6" class="input-check" onchange="setLeverAndCheckboxesStatus()">
+            </div>
+            <div class="levers">
+                <input type="range" id="lever-1" class="input-lever" step="0.5" value="10" min="0" max="100" onchange="setLeverAndCheckboxesStatus()">
+                <input type="range" id="lever-2" class="input-lever" step="0.5" value="10" min="0" max="100" onchange="setLeverAndCheckboxesStatus()">
+                <input type="range" id="lever-3" class="input-lever" step="0.5" value="10" min="0" max="100" onchange="setLeverAndCheckboxesStatus()">
+                <input type="range" id="lever-4" class="input-lever" step="0.5" value="10" min="0" max="100" onchange="setLeverAndCheckboxesStatus()">
+                <input type="range" id="lever-5" class="input-lever" step="0.5" value="10" min="0" max="100" onchange="setLeverAndCheckboxesStatus()">
+            </div>
+            <input type="button" value="Launch" class="input-launch">
+        </div>
+    </div>
+</div>
 </body>
 </html>
